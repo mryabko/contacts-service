@@ -1,0 +1,24 @@
+{
+  "name": "contacts-service",
+  "version": "1.0.0",
+  "description": "Service in node js for contacts app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mryabko/contacts-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mryabko/contacts-service/issues"
+  },
+  "homepage": "https://github.com/mryabko/contacts-service#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "joi": "^14.3.0"
+  }
+}
