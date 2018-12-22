@@ -19,6 +19,7 @@
   "homepage": "https://github.com/mryabko/contacts-service#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "joi": "^14.3.0"
+    "joi": "^14.3.0",
+    "mongoose": "^5.4.0"
   }
 }

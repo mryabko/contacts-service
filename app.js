@@ -1,39 +1,17 @@
 const express = require('express');
 const Joi = require('joi');
+
 const app = express();
+const contactService = require('./contact.service');
 
 app.use(express.json());
-
-const contacts = [
-  {
-    id: 1,
-    name: 'max',
-    email: 'test@test.com',
-    phone: '604-555-5555',
-    website: 'http://google.com'
-  },
-  {
-    id: 2,
-    name: 'artem',
-    email: 'test@test.com',
-    phone: '604-555-5555',
-    website: 'http://google.com'
-  },
-  {
-    id: 3,
-    name: 'test',
-    email: 'test@test.com',
-    phone: '604-555-5555',
-    website: 'http://google.com'
-  }
-];
 
 app.get('/', (req, res) => {
   res.send('Welcome to Node js Contacts API test');
 });
 
 app.get('/api/contacts', (req, res) => {
-  res.send(contacts);
+  contactService.getContacts(req, res);
 });
 
 app.get('/api/contacts/:id', (req, res) => {
