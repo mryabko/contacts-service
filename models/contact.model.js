@@ -2,7 +2,6 @@ var mongoose = require('mongoose');
 
 var contactSchema = mongoose.Schema(
   {
-    _id: mongoose.Schema.Types.ObjectId,
     name: String,
     email: String,
     phone: String,
@@ -11,6 +10,6 @@ var contactSchema = mongoose.Schema(
   { collection: 'Contacts' }
 );
 
-var Contacts = mongoose.model('Contact', contactSchema);
+var Contact = mongoose.model('Contact', contactSchema);
 
-module.exports = Contacts;
+module.exports = Contact;
