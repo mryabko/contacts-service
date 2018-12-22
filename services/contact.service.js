@@ -1,6 +1,6 @@
-const Contacts = require('./contact.model');
+const Contacts = require('../models/contact.model');
 
-require('./mongo')
+require('../mongo')
   .connect()
   .then(
     () => {
